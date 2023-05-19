@@ -1,0 +1,16 @@
+@use 'vars';
+.desktop{
+  
+   @include vars.nav;
+
+   &__about-item,&__login-item{
+      
+      padding: 20px 10px;
+      
+   }
+
+   &__about-item:hover,&__login-item:hover{
+      background-color: vars.$colorHover;
+   }
+   
+}

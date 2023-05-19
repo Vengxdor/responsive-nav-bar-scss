@@ -1,0 +1,38 @@
+@use 'vars';
+
+.mobile{
+   @include vars.nav;
+
+   font-size: 18px;
+   text-transform: capitalize;
+
+   &__icon{
+      cursor: pointer;
+      user-select: none;
+   }
+   
+
+   &__info a{
+      display: flex;
+      flex-direction: column;
+      padding: 5px 0 10px 30px;
+   }
+
+   &__info ul li:hover{
+      background-color: vars.$colorHover;
+   }
+
+  
+   
+}
+
+.mobile__info{
+   display: none;
+}
+
+
+.diseable{
+   display: block;
+   background-color: #000;
+   height: 200px;
+}

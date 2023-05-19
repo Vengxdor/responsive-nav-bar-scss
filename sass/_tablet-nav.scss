@@ -1,0 +1,69 @@
+@use 'vars';
+
+.tablet{
+   display: none;
+}
+
+
+
+
+.tablet{
+   @include vars.nav;
+
+
+   &__about_item{
+      padding: 20px 10px;
+   }
+
+   &__about_item:hover{
+      background-color: vars.$colorHover;
+   }
+  
+  
+}
+
+.more{
+   .more__text{
+      padding: 20px 15px;
+
+   }
+   
+   &:hover {
+      background-color: vars.$colorHover;
+      
+   }
+
+   &__mini-menu{
+      display: none;
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      right: 0;
+            
+      
+      & ul li a{
+         margin: 10px 5px;
+      }
+
+      & ul li:hover{
+         background-color: vars.$colorHover;
+         list-style: none;
+      }
+
+
+   }
+
+   &:hover &__text ~ &__mini-menu {
+      display: block;
+      background-color: black;
+
+   }
+   &__mini-menu ul li{
+      padding: 16px 0;
+   }
+
+
+
+
+
+}
